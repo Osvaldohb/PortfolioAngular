@@ -1,0 +1,87 @@
+.nav__container {
+    height: 20%;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.section__main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 15px;
+    padding: 2rem;
+}
+
+.skills-section {
+    padding: 2rem;
+    height: auto;
+    width: 100%;
+}
+
+.skills-content {}
+
+.main__article {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.main__article h1,
+.main__article h2,
+.main__article p {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.section__main {
+    padding: 3rem 2rem;
+}
+
+.nav__container {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.projects-section {
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.project-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.projects-section h2 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.project-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card p {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

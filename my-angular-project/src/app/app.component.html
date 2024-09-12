@@ -1,0 +1,117 @@
+<main class="flex justify-center flex-col items-center overflow-x-hidden w-full">
+    <nav class="nav__container w-full">
+        <app-nav></app-nav>
+    </nav>
+
+    <section class="section__main animate-fadeIn ">
+        <article class="main__article  max-w-screen-lg ">
+            <!-- Título con sombra sutil y animación al hacer scroll -->
+            <h1 data-aos="fade-right" class="text-center sm:text-center md:text-left lg:text-left text-lg sm:text-xl md:text-2xl lg:text-4xl font-orbitron mb-4 text-white shadow-lg">
+                Osvaldo Santillan Jimenez
+            </h1>
+            <!-- Subtítulo con sombra más ligera y animación -->
+            <h2 data-aos="fade-left" class="text-center sm:text-center md:text-left lg:text-left text-base sm:text-lg md:text-xl lg:text-2xl font-orbitron mb-4 text-gray-400 shadow-sm">
+                Full Stack Developer
+            </h2>
+            <!-- Texto principal con animación -->
+            <p data-aos="fade-up" class="text-center sm:text-center md:text-left lg:text-left text-base sm:text-lg md:text-xl lg:text-2xl max-w-lg mx-auto leading-relaxed text-white shadow-md">
+                Welcome to my portfolio. I specialize in creating sleek, modern web interfaces that deliver outstanding user experiences. Let's build something
+                <span class="text-orange-400 font-orbitron">amazing</span> together.
+            </p>
+            <!-- Botón con animación y transición suave -->
+            <div class="flex justify-center md:justify-start mt-6" data-aos="zoom-in">
+                <a href="#projects" class="text-white bg-cyan-500 hover:bg-cyan-600 hover:scale-105 transition-transform duration-300 ease-in-out py-2 px-4 rounded-full shadow-lg">
+                View My Projects
+            </a>
+            </div>
+        </article>
+    </section>
+
+    <section class="skills-section py-16">
+        <h2 class="text-center text-white text-3xl lg:text-5xl font-orbitron mb-8  sm:mt-10 md:mt-14 lg:mt-24">My Skills</h2>
+
+        <div class="skills-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="skill-card bg-gray-900 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="100">
+                <img src="../assets/Angular_full_color_logo.svg.png" alt="Angular" class="w-16 mx-auto mb-4">
+                <h3 class="text-white text-xl text-center">Angular</h3>
+                <p class="text-gray-400 text-center">Expert in building scalable frontend applications with dynamic UI/UX, focusing on performance and maintainability using Angular's powerful framework.</p>
+            </div>
+
+            <div class="skill-card bg-gray-900 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" data-aos="fade-left" data-aos-delay="200">
+                <img src="../assets/React_Logo.wine.png" alt="React" class="w-24 mx-auto mb-4">
+                <h3 class="text-white text-xl text-center">React</h3>
+                <p class="text-gray-400 text-center">Skilled in developing fast and responsive single-page applications, leveraging React component-based architecture for modular and maintainable code.</p>
+            </div>
+
+            <div class="skill-card bg-gray-900 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" data-aos="fade-right" data-aos-delay="300">
+                <img src="../assets/node-js-icon-454x512-nztofx17.png" alt="NodeJs" class="w-14 mx-auto mb-4">
+                <h3 class="text-white text-xl text-center">NodeJs</h3>
+                <p class="text-gray-400 text-center">Proficient in backend development using Node.js, specializing in building fast, scalable server-side applications with efficient APIs.</p>
+            </div>
+
+            <div class="skill-card bg-gray-900 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="../assets/spring-boot-ok.png" alt="SpringBoot" class="w-28 mx-auto mb-4">
+                <h3 class="text-white text-xl text-center">SpringBoot</h3>
+                <p class="text-gray-400 text-center">Experienced in creating robust, production-ready backend services using Spring Boot, focusing on enterprise-level Java applications and microservices.</p>
+            </div>
+
+            <div class="skill-card bg-gray-900 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="../assets/githubLogo.png" alt="GitHub" class="w-14 mx-auto mb-4">
+                <h3 class="text-white text-xl text-center">GitHub</h3>
+                <p class="text-gray-400 text-center">Expert in version control and collaborative development, utilizing GitHub for managing code, branches, and deployments with best practices.</p>
+            </div>
+
+            <div class="skill-card bg-gray-900 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="../assets/sql-database-icon-logo-design-ui-or-ux-app-png.webp" alt="NodeJs" class="w-24 mx-auto mb-4">
+                <h3 class="text-white text-xl text-center">SQL</h3>
+                <p class="text-gray-400 text-center">Proficient in database design and management, ensuring efficient data retrieval and manipulation using SQL.</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="projects-section py-16">
+        <h2 class="text-center text-white text-3xl lg:text-5xl font-orbitron mb-8">My Projects</h2>
+
+        <div class="projects-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Proyecto 1 -->
+            <div class="project-card bg-gray-900 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="../assets/project1-screenshot.png" alt="Project 1" class="w-full rounded-md mb-4">
+                <h3 class="text-white text-xl text-center">Project 1</h3>
+                <p class="text-gray-400 text-center mb-4">A full-stack web application built with Angular and Node.js, designed for seamless user experience.</p>
+                <div class="flex justify-center gap-4">
+                    <a href="https://live-demo-link.com" target="_blank" class="text-white bg-cyan-500 hover:bg-cyan-600 py-2 px-4 rounded-full shadow-lg">Live Demo</a>
+                    <a href="https://github-repo-link.com" target="_blank" class="text-white bg-gray-700 hover:bg-gray-800 py-2 px-4 rounded-full shadow-lg">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card bg-gray-900 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="../assets/project2-screenshot.png" alt="Project 2" class="w-full rounded-md mb-4">
+                <h3 class="text-white text-xl text-center">Project 2</h3>
+                <p class="text-gray-400 text-center mb-4">A responsive React application for managing tasks, with a modern UI and smooth interactions.</p>
+                <div class="flex justify-center gap-4">
+                    <a href="https://live-demo-link.com" target="_blank" class="text-white bg-cyan-500 hover:bg-cyan-600 py-2 px-4 rounded-full shadow-lg">Live Demo</a>
+                    <a href="https://github-repo-link.com" target="_blank" class="text-white bg-gray-700 hover:bg-gray-800 py-2 px-4 rounded-full shadow-lg">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="project-card bg-gray-900 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="../assets/project3-screenshot.png" alt="Project 3" class="w-full rounded-md mb-4">
+                <h3 class="text-white text-xl text-center">Project 3 dd</h3>
+                <p class="text-gray-400 text-center mb-4">A Node.js API built for efficient data handling and integrations with external services.</p>
+                <div class="flex justify-center gap-4">
+                    <a href="https://live-demo-link.com" target="_blank" class="text-white bg-cyan-500 hover:bg-cyan-600 py-2 px-4 rounded-full shadow-lg">Live Demo</a>
+                    <a href="https://github-repo-link.com" target="_blank" class="text-white bg-gray-700 hover:bg-gray-800 py-2 px-4 rounded-full shadow-lg">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <ngx-particles [id]="id" [options]="options" (particlesLoaded)="particlesLoaded($event)" class="animate-fadeIn w-full"></ngx-particles>
+</main>

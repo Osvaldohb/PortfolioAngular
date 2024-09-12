@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: radial-gradient(circle at 25% 25%, rgba(103, 58, 183, 0.5) 0%, rgba(103, 58, 183, 0) 40%), radial-gradient(circle at 60% 30%, rgba(63, 81, 181, 0.4) 0%, rgba(63, 81, 181, 0) 50%), radial-gradient(circle at 40% 60%, rgba(33, 150, 243, 0.3) 0%, rgba(33, 150, 243, 0) 60%), radial-gradient(circle at 20% 80%, rgba(103, 58, 183, 0.4) 0%, rgba(103, 58, 183, 0) 70%), radial-gradient(circle at 75% 80%, rgba(63, 81, 181, 0.3) 0%, rgba(63, 81, 181, 0) 80%);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+}
+
+h1,
+h2 {
+    color: #ffffff;
+    /* Púrpura cósmico para títulos */
+}
+
+a {
+    color: #4FC3F7;
+    /* Azul estelar para enlaces */
+}
+
+button {
+    background-color: #66BB6A;
+    /* Verde espacial para botones */
+    color: #FFFFFF;
+}
+
+p {
+    color: #B0BEC5;
+    /* Gris claro para texto secundario */
+}
