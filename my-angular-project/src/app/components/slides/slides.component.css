@@ -1,0 +1,12 @@
+.testimonials-swiper {
+    width: 100%;
+    height: auto;
+}
+
+.testimonial-card {
+    padding: 2rem;
+}
+
+.testimonial_card--inter {
+    width: 25%;
+}

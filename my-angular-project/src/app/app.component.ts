@@ -5,14 +5,14 @@ import { MoveDirection, OutMode ,Container,Engine} from "@tsparticles/engine";
 import { loadSlim } from '@tsparticles/slim';
 import { NgParticlesService } from "@tsparticles/angular";
 import { NgxParticlesModule } from "@tsparticles/angular";
+import { SlidesComponent } from './components/slides/slides.component';
 import AOS from "aos";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavComponent,NgxParticlesModule],
-
-templateUrl: './app.component.html',
+  imports: [RouterOutlet, NavComponent,NgxParticlesModule,SlidesComponent],
+  templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
@@ -91,7 +91,7 @@ export class AppComponent implements OnInit {
   }
 
   particlesLoaded(container: Container): void {
-    console.log(container);
+
 }
 
 }
