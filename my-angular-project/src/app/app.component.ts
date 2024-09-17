@@ -8,11 +8,13 @@ import { NgxParticlesModule } from "@tsparticles/angular";
 import { SlidesComponent } from './components/slides/slides.component';
 import { FooterComponent } from './components/footer/footer.component';
 import AOS from "aos";
+import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
+import { NgForm,FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavComponent,NgxParticlesModule,SlidesComponent,FooterComponent],
+  imports: [RouterOutlet, NavComponent,NgxParticlesModule,SlidesComponent,FooterComponent,FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -94,5 +96,21 @@ export class AppComponent implements OnInit {
   particlesLoaded(container: Container): void {
 
 }
+
+    sendEmailJs(contactForm:NgForm,e:Event){
+        emailjs.sendForm('service_dpp6k8q', 'template_anuninu', e.target as HTMLFormElement,{
+            publicKey:'0zhJ5vUlkIoh_dvLD',
+        })
+        .then((result: EmailJSResponseStatus) => {
+          console.log('Email sent successfully', result);
+
+          const form = e.target as HTMLFormElement;
+          (form.querySelector('#name') as HTMLInputElement).value = '';
+          (form.querySelector('#email') as HTMLInputElement).value = '';
+          (form.querySelector('#message') as HTMLTextAreaElement).value = '';
+        }, (error) => {
+            console.log(error.text);
+        });
+    }
 
 }
