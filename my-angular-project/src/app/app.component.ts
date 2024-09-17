@@ -6,12 +6,13 @@ import { loadSlim } from '@tsparticles/slim';
 import { NgParticlesService } from "@tsparticles/angular";
 import { NgxParticlesModule } from "@tsparticles/angular";
 import { SlidesComponent } from './components/slides/slides.component';
+import { FooterComponent } from './components/footer/footer.component';
 import AOS from "aos";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavComponent,NgxParticlesModule,SlidesComponent],
+  imports: [RouterOutlet, NavComponent,NgxParticlesModule,SlidesComponent,FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -42,7 +43,7 @@ export class AppComponent implements OnInit {
             value: "#ffffff",
         },
         links: {
-          enable: false,
+          enable: true,
         },
         move: {
             direction: MoveDirection.none,
@@ -51,7 +52,7 @@ export class AppComponent implements OnInit {
                 default:OutMode.out,
             },
             random: true,
-            speed: 0.5,
+            speed: 1,
             straight: false,
         },
         number: {
