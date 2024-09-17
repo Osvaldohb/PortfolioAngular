@@ -8,17 +8,24 @@
     justify-content: center;
     align-items: center;
     height: 80vh;
-    margin-bottom: 15px;
+    margin-bottom: 3rem;
     padding: 2rem;
 }
 
 .skills-section {
     padding: 2rem;
-    height: auto;
     width: 100%;
 }
 
-.skills-content {}
+.skills-content {
+    height: 90%;
+    align-items: center;
+    align-content: center;
+}
+
+.skill-card {
+    height: fit-content;
+}
 
 .main__article {
     padding-left: 3%;
@@ -46,12 +53,21 @@
 
 .projects-section {
     padding: 2rem;
-    margin-top: 4rem;
 }
 
 .project-card img {
     height: 200px;
     object-fit: cover;
+}
+
+.project-card {
+    height: fit-content;
+}
+
+.projects-content {
+    height: 90%;
+    align-items: center;
+    align-content: center;
 }
 
 .projects-section h2 {
@@ -82,7 +98,6 @@
 }
 
 .testimonials-section {
-    padding: 2rem;
     margin-top: 2rem;
 }
 
