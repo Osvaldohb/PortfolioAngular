@@ -22,6 +22,12 @@
     </ul>
 
     <article class="Nav__Mobile">
-        <img src="../../../assets/menu-MobileVersion.svg" alt="">
+        <img src="../../../assets/menu-MobileVersion.svg" alt="" mat-button [matMenuTriggerFor]="menu">
+        <mat-menu #menu="matMenu">
+            <a mat-menu-item href="#Home">Home</a>
+            <a mat-menu-item href="#Skills">Skills</a>
+            <a mat-menu-item href="#About">About</a>
+            <a mat-menu-item href="#Contact">Contact</a>
+        </mat-menu>
     </article>
 </nav>

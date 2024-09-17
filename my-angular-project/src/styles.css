@@ -45,3 +45,5 @@ p {
     color: #B0BEC5;
     /* Gris claro para texto secundario */
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
