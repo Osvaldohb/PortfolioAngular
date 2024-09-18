@@ -15,16 +15,24 @@
 .skills-section {
     padding: 2rem;
     width: 100%;
+    margin-bottom: 5rem;
 }
 
 .skills-content {
     height: 90%;
-    align-items: center;
     align-content: center;
 }
 
 .skill-card {
-    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    /* bg-gray-900 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .main__article {
@@ -109,5 +117,11 @@
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .skill-card {
+        height: 100%;
     }
 }
