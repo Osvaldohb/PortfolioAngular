@@ -88,7 +88,7 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.openDialogForError()
+
 
       AOS.init();
 
@@ -106,14 +106,14 @@ export class AppComponent implements OnInit {
             publicKey:'0zhJ5vUlkIoh_dvLD',
         })
         .then((result: EmailJSResponseStatus) => {
-          console.log('Email sent successfully', result);
+          this.openDialogForSuccess();
 
           const form = e.target as HTMLFormElement;
           (form.querySelector('#name') as HTMLInputElement).value = '';
           (form.querySelector('#email') as HTMLInputElement).value = '';
           (form.querySelector('#message') as HTMLTextAreaElement).value = '';
         }, (error) => {
-            console.log(error.text);
+            this.openDialogForError()
         });
     }
 
