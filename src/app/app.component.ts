@@ -10,11 +10,14 @@ import { FooterComponent } from './components/footer/footer.component';
 import AOS from "aos";
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { NgForm,FormsModule } from '@angular/forms';
+import { SuccessModalComponent } from './components/modals/success-modal/success-modal.component';
+import { ErrorModalComponent } from './components/modals/error-modal/error-modal.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavComponent,NgxParticlesModule,SlidesComponent,FooterComponent,FormsModule],
+  imports: [RouterOutlet, NavComponent,NgxParticlesModule,SlidesComponent,FooterComponent,FormsModule,SuccessModalComponent,ErrorModalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -79,12 +82,13 @@ export class AppComponent implements OnInit {
 
 
 
-  constructor(private ngParticlesService: NgParticlesService) {
+  constructor(private ngParticlesService: NgParticlesService,private matDialog:MatDialog) {
 
   }
 
 
   ngOnInit(): void {
+    this.openDialogForError()
 
       AOS.init();
 
@@ -112,5 +116,19 @@ export class AppComponent implements OnInit {
             console.log(error.text);
         });
     }
+
+    openDialogForSuccess(): void {
+        const dialogRef = this.matDialog.open(SuccessModalComponent, {
+          maxHeight:'82vh',
+        });
+
+      }
+
+      openDialogForError(): void {
+        const dialogRef = this.matDialog.open(ErrorModalComponent, {
+          maxHeight:'82vh',
+        });
+
+      }
 
 }
