@@ -91,7 +91,6 @@ export class AppComponent implements OnInit {
 
 
       AOS.init();
-      AOS.refresh();
 
       this.ngParticlesService.init(async(engine:Engine)=>{
         await loadSlim(engine)
